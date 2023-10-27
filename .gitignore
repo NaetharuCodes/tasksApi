@@ -1,0 +1,193 @@
+## .NET Core
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.dll
+
+# User-specific folders
+*.rsproj
+*.vscode
+*.vsconfig
+
+# Rider
+.idea/
+bin/
+obj/
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code directories
+.vscode/
+
+# Rider
+.idea/
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Tye
+.tye/
+
+# Rider
+.idea/
+
+# ASP.NET Core
+appsettings.json
+
+# Rider
+.idea/
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# JetBrains Rider
+.idea/
+
+# ASP.NET Core
+appsettings.Development.json
+appsettings.Test.json
+
+# Rider
+.idea/
+
+# Unit test .config (for Windows only)
+*.testsettings
+
+# Windows image file caches
+Thumbs.db
+
+# JetBrains Rider
+.idea/
+
+# Windows image file caches
+ehthumbs.db
+
+# NUnit
+*.VisualState.xml
+TestResult.xml
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# JetBrains Rider
+.idea/
+
+# .NET Core
+*.swp
+*.swo
+*.sw?
+*~
+Directory.Build.props
+Directory.Build.targets
+*.bak
+
+# Rider
+.idea/
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code directories
+.vscode/
+*.jucer
+*.sw?
+*~
+
+# Rider
+.idea/
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Rider
+.idea/
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code directories
+.vscode/
+*.jucer
+*.sw?
+*~
+
+# Rider
+.idea/
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Rider
+.idea/
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
