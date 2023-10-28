@@ -37,11 +37,29 @@ public class TasksController : ControllerBase
     }
 
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<TaskItem>>> GetAllTasks()
+    public async Task<ActionResult<IEnumerable<TaskItem>>> GetAllTasks(string filter = "all")
     {
-        var tasks = await _context.Tasks.ToListAsync();
+        IQueryable<TaskItem> query = _context.Tasks;
+
+        DateTime currentDate = DateTime.Now.Date;
+
+        switch (filter.ToLower())
+        {
+            case "open":
+                query = query.Where(t => !t.Completed);
+                break;
+            case "closed":
+                query = query.Where(t => t.Completed);
+                break;
+            case "overdue":
+                query = query.Where(t => !t.Completed && t.DueDate < currentDate);
+                break;
+        }
+
+        var tasks = await query.ToListAsync();
         return tasks;
     }
+
 
     [HttpGet("{id}")]
     public async Task<ActionResult<TaskItem>> GetTaskById(int id)
@@ -54,5 +72,25 @@ public class TasksController : ControllerBase
         }
 
         return task;
+    }
+
+    [HttpPut("{id}/status")]
+    public async Task<IActionResult> UpdateTaskStatus(int id, TaskUpdateDto taskUpdateDto)
+    {
+        var task = await _context.Tasks.FindAsync(id);
+        _logger.LogInformation($"Task id {id} not found");
+
+        if (task == null)
+        {
+            return NotFound();
+        }
+
+        task.Completed = taskUpdateDto.Completed;
+
+        await _context.SaveChangesAsync();
+
+        _logger.LogInformation($"Task with ID: {id} status updated to : {taskUpdateDto.Completed}");
+
+        return NoContent();
     }
 }
